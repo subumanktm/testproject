@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Home Page</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f4f4f4;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 50px;
+background:#333;
+color:white;
+}
+
+.logo{
+font-size:24px;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+}
+
+.nav-links li{
+margin-left:20px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+
+.hero{
+text-align:center;
+padding:120px 20px;
+background:linear-gradient(135deg,#667eea,#764ba2);
+color:white;
+}
+
+.hero h2{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+margin-bottom:20px;
+font-size:18px;
+}
+
+button{
+padding:12px 25px;
+border:none;
+background:#ff9800;
+color:white;
+font-size:16px;
+cursor:pointer;
+border-radius:5px;
+}
+
+button:hover{
+background:#e68900;
+}
+
+footer{
+text-align:center;
+padding:15px;
+background:#222;
+color:white;
+position:fixed;
+bottom:0;
+width:100%;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<nav class="navbar">
+<h1 class="logo">MyWebsite</h1>
+
+<ul class="nav-links">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="hero">
+<h2>Welcome to My Website</h2>
+<p>This is a simple homepage made with HTML, CSS and JavaScript in one file.</p>
+
+<button onclick="showMessage()">Click Me</button>
+</section>
+
+<footer>
+<p>© 2026 MyWebsite. All Rights Reserved.</p>
+</footer>
+
+<script>
+function showMessage(){
+alert("Welcome to my website!");
+}
+</script>
+
+</body>
+</html>
